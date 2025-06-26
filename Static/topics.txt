@@ -1,0 +1,4 @@
+static var - why? #
+static var - use case #
+static mehtod & call 
+static restrictions : static methods can't access non-static var/method, bcz static provides u the functionality to use that properties without creating any objects. But, if java allowed accessing non-static from static, every thing would become accessible without creating any object
