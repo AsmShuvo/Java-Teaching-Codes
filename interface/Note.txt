@@ -1,0 +1,58 @@
+# interface is a class which contains only abstract methods (100% abstraction)
+# keyword `interface`
+to achieve interface java provides a keyword called `implements` (instead of `extends`)
+- methods are by always public and static
+- variables are always public, static and final
+- methods must be overriden if implemented
+- example: deals between client & developer
+
+
+
+abstraction :
+1) abstract class --- <=100% abstraction, non-abstract-method + abstract-method : both allowed
+2) interface --- 100%
+
+class A{
+    void show(){
+
+    }
+}
+
+class B extends A{
+
+}
+------------------
+
+abstract class C{
+    abstract void show(); 
+    void display(){
+
+    }
+    int sum(){
+
+    }
+}
+
+class X extends C{
+    //overriden
+    void show(){
+        ----------
+    }
+}
+--------------------
+
+interface A{
+    int age = 25; //final
+    void a1(); // but we wont use the abstract kwyword here
+    abstract int add(); //not an error
+}
+
+class B implements A{
+    void a1(){
+        -----
+    }
+    int add(){
+        -------
+    }
+}
+-----------------

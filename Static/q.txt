@@ -1,0 +1,8 @@
+create a class containing:
+    - constructor: increments a
+    - variable : a
+    - static method : display - increments the value of a
+    -  a static block to initialize a with -1
+
+create two objects and print the value of a
+you must print `a` with and without creating objects
