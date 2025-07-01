@@ -1,0 +1,9 @@
+Package is nothing but folder in windows
+
+Def: A package arranges a number of classes, interfaces and sub-packages into a particular group
+
+Type: 
+    Predefined : java.lang, java.util, java.io etc
+    user-defined: package p1 (personal use)
+
+

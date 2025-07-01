@@ -1,0 +1,12 @@
+Problem: Shape Calculator
+Create an abstract class `Shape` for a basic shape calculator that supports different shapes like circles and rectangles.
+
+Requirements:
+Create an abstract class `Shape` with:
+    An abstract method `calculateArea()` that returns a double.
+    An instance variable `name` initialized by constructor
+    A concrete method `display()` that prints the shape's name and area.
+Create two concrete classes:
+    `Circle` with a radius variable and `calculateArea()` returning π * radius².
+    `Rectangle` with length and width variables and `calculateArea()` returning length * width.
+In a `Main` class, create one `Circle` and one `Rectangle`, then call `display()` on both

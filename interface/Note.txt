@@ -56,3 +56,20 @@ class B implements A{
     }
 }
 -----------------
+
+
+# interface provides multiple inheritance ***
+example: class C implements A,B
+interface A{
+    m1();
+}
+
+interface B{
+    m1();
+}
+
+class C implements A,B{
+
+}
+
+??? Difference between interface and abstract class
