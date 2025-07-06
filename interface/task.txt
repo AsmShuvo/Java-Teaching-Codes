@@ -1,0 +1,11 @@
+Create a simple program to model animals making sounds using a Java interface. The program should allow different animals to produce their unique sounds.
+
+Requirements:
+Create an interface `Animal` with one abstract method:
+    makeSound(): takes a String parameter called 'sound' Returns it twice.
+Implement two classes that use the Animal interface:
+    Dog: Returns "Woof!" as its sound.
+    Cat: Returns "Meow!" as its sound.
+Write a main class AnimalDemo to:
+Create one Dog and one Cat.
+Call makeSound() on each and print the results.
