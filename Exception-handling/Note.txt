@@ -1,24 +1,53 @@
-Error types: 
+Error types: ***
 1. Syntax Error 2. Runtime Error 3.Logical Error
 
 Exception: Exception is a run time error
 Definition: An Exception is an abnormal codition that arises in a code sequence at run time
-
-ex: y=0 x/y
-types of Exception:
- Arithmatic Exception
- NullPointerException
- StringIndexOutOfBoundsException
- ArrayIndexOutOfBoundException
- ClassNotFoundException
- IOException
- NoSuchMethodException
- NumberFormat Exception
- FileNotFoundException etc ....
+{
+    print("shuvo") // okay
+    int y=0; int x=10; int div = x/y; // --> Exception: / by zero
+}
+types of Exception e: 
+    Arithmatic Exception 2/0
+    NullPointerException  string name; name.length(); 
+    StringIndexOutOfBoundsException name = abc print(name[3])
+    ArrayIndexOutOfBoundException a[]= 1 2 3 ; a[5];
+    NumberFormat Exception string y = "123" --> num = 123  string x = "mahdi" Integer.parseInt(x)
+    -------------------------------
+    ClassNotFoundException 
+    IOException 
+    NoSuchMethodException 
+    
+    FileNotFoundException etc ....
 
  Exception handling: mechanism to handle the runtime error :
- try 
- catch 
- finally
+ try{
+    // ------ code that might create Exception
+
+    ---
+    ---
+    ---
+ } 
+ catch {
+    // ---------resolve : message
+ }
+ finally{
+    ///-------- code must be executed
+    thank you
+ }
+ ---
  throw
  throws
+
+
+      -> GET request ---------------> server (<ack)
+ clinet                                           <----read------> database
+      <--------return-----------------
+
+ client -> POST request (message- ex:photo+msg) -------------------> server (<ack) <-----create-----> database  : message write
+                                        <--return-----response OK---                
+
+UPDATE
+DELETE(id)
+4 request: GET (get data : Read) , POST (database write / Create), UPDATE (rewrite / Update), DELETE(erase / Delete) : CRUD     
+--CRUD--
