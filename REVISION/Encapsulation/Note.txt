@@ -1,0 +1,43 @@
+1. What is encapsulation in Java?
+Answer:
+Encapsulation is an OOP principle where data (variables) and code (methods) that operate on the data are bundled together in a single unit (class). It restricts direct access to some of an object’s components, which is known as data hiding.
+
+How does encapsulation differ from abstraction?
+Answer:
+
+Encapsulation: Hides the internal state of an object and requires all interaction to be performed through methods.
+Abstraction: Hides implementation details and only shows essential features.
+
+Example:
+Encapsulation is using private variables with getters/setters.
+Abstraction is using interfaces or abstract classes.
+
+How do you implement encapsulation in a Java class?
+Answer:
+Declare variables as private.
+Provide public getters and setters to access and modify them.
+Example:
+public class Student {
+    private String name;
+    private int age;
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    public int getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
+}
+
+Is it always necessary to use getters and setters?
+Answer:
+Not always. If the field should be immutable (like in a value object), you can use:
+private final String name;
+
+How does encapsulation support information hiding?
+Answer:
+Encapsulation hides internal details from the outside world. Only necessary interfaces (getters/setters) are exposed, so users don’t know how data is managed internally — only how to interact with it.
+
+Can you give a real-world analogy for encapsulation?
+Answer:
+Think of a coffee machine. You press a button to make coffee, but you don’t see how it heats water or brews — those details are encapsulated. You interact through a simple interface.
+

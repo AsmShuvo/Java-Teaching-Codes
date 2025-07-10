@@ -1,0 +1,14 @@
+1. What is inheritance in Java?
+Answer:
+Inheritance is a mechanism where one class (child/subclass) acquires the properties and behaviors (fields and methods) of another class (parent/superclass).
+
+Example:
+class Animal {
+    void eat() { System.out.println("This animal eats."); }
+}
+
+class Dog extends Animal {
+    void bark() { System.out.println("Dog barks."); }
+}
+Now, Dog inherits the eat() method from Animal.
+
