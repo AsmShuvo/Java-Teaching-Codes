@@ -40,4 +40,3 @@ Encapsulation hides internal details from the outside world. Only necessary inte
 Can you give a real-world analogy for encapsulation?
 Answer:
 Think of a coffee machine. You press a button to make coffee, but you don’t see how it heats water or brews — those details are encapsulated. You interact through a simple interface.
-
