@@ -6,9 +6,60 @@ Example:
 class Animal {
     void eat() { System.out.println("This animal eats."); }
 }
-
 class Dog extends Animal {
     void bark() { System.out.println("Dog barks."); }
 }
 Now, Dog inherits the eat() method from Animal.
 
+2. Why do we need to use inheritance?
+  There are the following reasons to use inheritance in java:
+    We can reuse the code from the base class.
+    Using inheritance, we can increase features of class or method by overriding.
+    Inheritance is used to use the existing features of class.
+    It is used to achieve runtime polymorphism i.e method overriding.
+
+3. What is super class and subclass?
+Ans: A class from where a subclass inherits features is called superclass. It is also called base class or parent class.
+
+ A class that inherits all the members (fields, method, and nested classes) from other class is called subclass. It is also called a derived class, child class, or extended class.
+
+4 How is Inheritance implemented/achieved in Java?
+Ans: Inheritance can be implemented or achieved by using two keywords:
+extends: extends is a keyword that is used for developing the inheritance between two classes and two interfaces.
+implements: implements keyword is used for developing the inheritance between a class and interface.
+
+5. Can a class extend more than one class?
+Ans: No, one class can extend only a single class. *** why--
+
+6. Are constructor and instance initialization block inherited to subclass? ***
+Ans: No, constructor and instance initialization block of the superclass cannot be inherited to its subclass but they are executed while creating an object of the subclass.
+
+7. Are static members inherited to subclass in Java?
+Ans: Static block cannot be inherited to its subclass. A static method of superclass is inherited to the subclass as a static member and non-static method is inherited as a non-static member only.
+
+8 Can we inherit private members of base class to its subclass?
+Ans: No.
+
+9 What is order of calling constructors in case of inheritance?
+Ans: In case of inheritance, constructors are called from the top to down hierarchy.
+
+What are the types of inheritance in Java? **
+
+Ans: The various types of inheritance are as follows:
+
+a. Single inheritance eg: B extends A
+b. Multi-level inheritance eg: B->A C->B 
+c. Hierarchical inheritance  A->B C->B
+d. Multiple inheritance (allowed for interface, not for class) interface A implements B,C 
+e. Hybrid inheritance A->B B->C x->y z->y in_p implement in_q, in_r
+
+10 How does Multiple inheritance implement in Java?
+Ans: Multiple inheritance can be implemented in Java by using interfaces. A class cannot extend more than one class but a class can implement more than one interface.
+
+11. How will you prohibit inheritance in Java? *** therapBD -- java 
+Ans: If you declare a class as final, it cannot be extended. Thus, we can prohibit the inheritance of that class in Java or if you declare the constructor as private
+
+
+Reseach about: Java Object class , runtime polymorphism 
+
+//the ability of an object to take on many forms -  f(int a, int b) f(int a, int b, int c), f(double d)
